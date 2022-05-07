@@ -11,6 +11,7 @@ class PeopleED extends React.Component {
   }
   SaveData(){
     console.log("Ну что то получилось");
+    console.log("bkb ytn");
   }
   
   render(){
