@@ -1,14 +1,19 @@
 import React from "react";
-import Main from "./components/Main";
-import People from "./components/People";
-import PeopleED from "./components/PeopleEdit";
+import MainMenu from "./components/MainMenu";
+import { Route, Routes } from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import SignIn from "./components/SignIn";
 class App extends React.Component {
   render(){
     return (
-      <div>
-      <Main />
-      <People />
-      <PeopleED />
+ 
+      <div className="App">
+        <MainMenu />
+      
+            <Routes>
+              <Route path='/SignIn' element={<SignIn />} />
+            </Routes>
+
       </div>
     )
   }
